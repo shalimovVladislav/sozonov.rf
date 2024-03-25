@@ -1,0 +1,144 @@
+.bg-color-w {
+    background-color: #FFF;
+
+    position: relative;
+}
+
+.content {
+    position: relative;
+
+    z-index: 2;
+}
+
+.logo-bg-first {
+    position: absolute;
+    
+
+    z-index: 1;
+
+    width: 980px;
+    height: 980px;
+
+    transform: translateX(-200px) translateY(-200px) rotate(20deg);
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+
+    max-width: 1200px;
+
+    margin-inline: auto;
+
+    padding: 20px;
+
+
+    & .text-container {
+        font-weight: 600;
+        font-size: 36px;
+        color: #000;   
+    }
+
+    & .img-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+
+        & img {
+            display: block;
+            flex-grow: 0;
+            
+            width: 35%;
+            height: 35%;
+        }
+}
+}
+
+.advantages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 75px;
+
+    margin-inline: auto;
+    margin-block: 100px;
+
+    max-width: 1200px;
+
+    padding: 100px 20px;
+    
+
+    & .right {
+        align-self: flex-end;
+    }
+
+    & .advantage {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        width: 50%;
+
+        & img {
+            width: 65px;
+            height: 65px;
+        }
+
+        & p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 180%;
+            color: #000;
+        }
+    }
+}
+
+.logo-bg-second {
+    position: absolute;
+    
+
+    z-index: 1;
+
+    width: 980px;
+    height: 980px;
+
+    transform: translateX(-200px) translateY(-1600px) rotate(20deg);
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 75px;
+
+    margin-inline: auto;
+    margin-block: 100px;
+
+    max-width: 1200px;
+
+    padding-inline: 20px;
+
+    & .text-container {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 180%;
+        color: #000;
+
+        padding-inline: 20px;
+
+        & .list-item {
+            display: list-item;
+            list-style-position: inside;
+        }
+    }
+
+    & img {
+        width: 50%;
+    }
+}

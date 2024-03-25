@@ -1,0 +1,49 @@
+.feedback-form {
+    & Form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    
+        max-width: 1200px;
+    
+        padding: 0 20px 155px 20px;
+    
+        & label{
+            display: none;
+        }
+    
+        & input {
+            flex-grow: 1;
+            flex-shrink: 1;
+            padding: 20px 25px;
+    
+            background: none;
+    
+            border: 1px solid #fff;
+            border-radius: 5px;
+    
+            font-family: inherit;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 150%;
+            color: #fff;
+        }
+    
+        & button {
+            padding: 20px 25px;
+    
+            border: none;
+            border-radius: 5px;
+    
+            background: #f49150;
+    
+            font-family: inherit;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 150%;
+            color: #fff;
+        }
+    }
+}
