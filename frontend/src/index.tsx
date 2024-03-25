@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from './components/App';
 import Home from '@/pages/Home';
-import About from '@/pages/About';
+import { LazyAbout } from '@/pages/About.lazy';
 import Feedback from '@/pages/Feedback';
-import Products from '@/pages/Products';
+import { LazyProducts } from '@/pages/Products.lazy';
 
 const app = () => {
   const root = createRoot(document.getElementById('root'));
@@ -23,7 +23,7 @@ const app = () => {
     },
     {
       path: '/about',
-      element: <About />
+      element: <Suspense fallback={'Loading...'}><LazyAbout /></Suspense>
     },
     {
       path: '/feedback',
@@ -31,7 +31,7 @@ const app = () => {
     },
     {
       path: '/products',
-      element: <Products />
+      element: <Suspense fallback={'Loading...'}><LazyProducts /></Suspense>
     },
 ]);
 

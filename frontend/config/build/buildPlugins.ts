@@ -31,7 +31,6 @@ export function buildPlugins({ mode, paths, analyzer }: BuildOptions): Configura
                 chunkFilename: 'css/[name].[contenthash:8].css',
             })
         );
-        plugins.push(new CopyPlugin());
     }
 
     if(analyzer) {
