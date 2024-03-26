@@ -55,6 +55,10 @@
             width: 35%;
             height: 35%;
         }
+
+        @media (max-width: 768px) {
+            display: none;
+        }
 }
 }
 
@@ -71,10 +75,18 @@
     max-width: 1200px;
 
     padding: 100px 20px;
+
+    @media (max-width: 768px) {
+        align-items: center;
+    }
     
 
     & .right {
         align-self: flex-end;
+
+        @media (max-width: 768px) {
+            align-self: center;
+        }
     }
 
     & .advantage {
@@ -83,6 +95,10 @@
         gap: 30px;
 
         width: 50%;
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
 
         & img {
             width: 65px;
@@ -140,5 +156,9 @@
 
     & img {
         width: 50%;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
 }

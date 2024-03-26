@@ -22,8 +22,8 @@ const Home = () => (
             <div className={classes['bg-car-parking']}>
                 <div className={classes['flex-container-column']}>
                     <div className={classes['text-container']}>
-                        <h1>Цените время</h1>
-                        <p>Не трать время на поиск парковочного места!  Установи приложение!</p>
+                        <h1 className={classes['color-white']}>Цените время</h1>
+                        <p className={classes['color-white']}>Не трать время на поиск парковочного места!  Установи приложение!</p>
                     </div>
                     <button className={classes['color-white']}>Скачать сейчас</button>
                 </div>

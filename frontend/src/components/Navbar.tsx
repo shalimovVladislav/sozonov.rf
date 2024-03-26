@@ -17,7 +17,7 @@ const Navbar = () => {
       <Link className={`${classes.link} ${isBgDark ? classes.light : classes.dark}`} to={'/home'}>Главная</Link>
       <Link className={`${classes.link} ${isBgDark ? classes.light : classes.dark}`} to={'/about'}>О нас</Link>
       <Link className={`${classes.link} ${isBgDark ? classes.light : classes.dark}`} to={'/products'}>Оплатить подписку</Link>
-      <Logo className={`${isBgDark ? classes.light : classes.dark}`} width={142} height={142}></Logo>
+      <Logo className={`${isBgDark ? classes.light : classes.dark} ${classes.logo}`} width={142} height={142}></Logo>
       <Link className={`${classes.link} ${isBgDark ? classes.light : classes.dark}`} to={'/feedback'}>Отзывы</Link>
       <Link className={`${classes.link} ${isBgDark ? classes.light : classes.dark}`} to={'/feedback'}>Помощь</Link>
       <Link className={`${classes.link} ${isBgDark ? classes.light : classes.dark}`} to={'#footer'}>Контакты</Link>
