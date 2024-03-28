@@ -1,11 +1,11 @@
-import webpack, { Configuration, DefinePlugin } from "webpack";
+import webpack, { Configuration, /*DefinePlugin*/ } from "webpack";
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer'
 import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
 import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin';
+//import CopyPlugin from 'copy-webpack-plugin';
 import path from "path";
-import CopyPlugin from 'copy-webpack-plugin';
 import { BuildOptions } from './types/types';
 
 
@@ -14,8 +14,9 @@ export function buildPlugins({ mode, paths, analyzer }: BuildOptions): Configura
     const isProd = mode === 'production';
 
     const plugins: Configuration['plugins'] = [
-        new HtmlWebpackPlugin( { template: paths.html, favicon: path.resolve(paths.public, 'favicon.svg') }),
-        new DefinePlugin({}),
+        new HtmlWebpackPlugin( { title: 'Созонов.рф', template: paths.html, favicon: path.resolve(paths.public, 'favicon.svg'), meta: { viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no' } }),
+        //new DefinePlugin({}),
+        //new CopyPlugin({}),
     ];
 
     if(isDev) {

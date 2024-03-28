@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import classes from './Feedback.module.scss';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -8,10 +8,13 @@ import RewiewImg2 from '@/assets/review_img2.jpg';
 import RewiewImg3 from '@/assets/review_img3.jpg';
 import RewiewImg4 from '@/assets/review_img4.jpeg';
 
-const Feedback = () => (
-    <>
+const Feedback = () => {
+    const feedbackForm = useRef<HTMLDivElement | null>(null);
+
+    return(
+        <>
         <main>
-            <Navbar />
+            <Navbar feedbackForm={feedbackForm}/>
             <div className={classes['feedback-bg']}>
                 <div className={classes['text-container']}>
                     <h1>
@@ -55,7 +58,7 @@ const Feedback = () => (
 
                 </div>
             </div>
-            <div className={classes['form-bg']}>
+            <div className={classes['form-bg']} ref={feedbackForm}>
                 <div className={classes['feedback-form-container']}>
                     <div className={classes['text-container']}>
                         <h1>
@@ -65,12 +68,13 @@ const Feedback = () => (
                             В целях оперативного рассмотрения ваших обращений просим максимально точно изложить суть вопроса и имеющиеся факты.
                         </p>
                     </div>
-                    <FeedbackForm />
+                    <FeedbackForm/>
                 </div>
             </div>
         </main>
         <Footer />
     </>
-);
+    )
+};
 
 export default Feedback;
