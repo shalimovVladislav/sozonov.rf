@@ -47,6 +47,12 @@
         font-weight: 600;
     
         background: #f49150;
+
+        box-shadow: 20px 20px 20px rgb(55, 77, 129);
+
+        &:hover {
+            background: #c77641;
+        }
     }
 
     & .color-white {
@@ -116,6 +122,10 @@
         line-height: 150%;
     
         background: #f49150;
+
+        &:hover {
+            background: #c77641;
+        }
     }
 
     & .text-container {

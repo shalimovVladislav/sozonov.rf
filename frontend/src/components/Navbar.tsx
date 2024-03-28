@@ -5,7 +5,7 @@ import Logo from '@/assets/logo.svg';
 
 const darkBgPagesPaths = ['/home', '/feedback'];
 
-const Navbar = ({ feedbackForm }: { feedbackForm?: React.MutableRefObject<HTMLDivElement> }) => {
+const Navbar = ({ feedbackForm }: { feedbackForm?: MutableRefObject<HTMLDivElement> }) => {
   let location = useLocation();
 
   const path = location.pathname;
