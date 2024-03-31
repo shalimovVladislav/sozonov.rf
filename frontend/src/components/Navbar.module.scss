@@ -1,5 +1,6 @@
 nav {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     gap: 80px;
@@ -8,9 +9,12 @@ nav {
     margin-inline: auto;
     padding: 20px;
 
-    & .link {
-        display: inline-block;
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        text-align: center;
+    }
 
+    & .link {
         width: 100px;
     
         font-weight: 400;
@@ -34,11 +38,28 @@ nav {
         border: none;
         padding: 0;
         cursor: pointer;
+
+        @media (max-width: 1024px) {
+            text-align: center;
+        }
+    
     }
 
     & .logo {
         width: 150px;
+
+        @media (max-width: 1024px) {
+            order: -1;
+        }
     }
+}
+
+.display-none {
+    display: none;
+}
+
+.display-block {
+    display: block;
 }
 
 .light {

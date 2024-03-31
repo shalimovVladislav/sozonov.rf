@@ -1,12 +1,12 @@
-import React, { createRef } from 'react';
+import React, { forwardRef, ForwardedRef } from 'react';
 import classes from './Footer.module.scss';
 import VKIcon from '@/assets/vk_icon.png';
 import TelegramIcon from '@/assets/telegram_icon.png';
 import YoutubeIcon from '@/assets/youtube_icon.png';
 
-const Footer = () => {
+const Footer = forwardRef((props, ref: ForwardedRef<HTMLDivElement>) => {
   return (
-    <div className={classes.footer} id='footer'>
+    <div className={classes.footer} ref={ref}>
       <div className={classes['flex-container-column']}>
         <div className={classes['text-container']}>
           <h1>Наши контакты</h1>
@@ -32,6 +32,6 @@ const Footer = () => {
       </div>
     </div>
   );
-};
+});
   
 export default Footer;

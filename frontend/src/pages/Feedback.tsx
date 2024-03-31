@@ -1,4 +1,5 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import classes from './Feedback.module.scss';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -9,12 +10,23 @@ import RewiewImg3 from '@/assets/review_img3.jpg';
 import RewiewImg4 from '@/assets/review_img4.jpeg';
 
 const Feedback = () => {
-    const feedbackForm = useRef<HTMLDivElement | null>(null);
+    const form = useRef<HTMLDivElement>();
+    const footer = useRef<HTMLDivElement>();
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.hash === "#form" && form.current) {
+            form.current.scrollIntoView({ behavior: "smooth" });
+        }
+        if (location.hash === "#footer" && footer.current) {
+            footer.current.scrollIntoView({ behavior: "smooth" });
+        }
+    }, [location]);
 
     return(
         <>
         <main>
-            <Navbar feedbackForm={feedbackForm}/>
+            <Navbar/>
             <div className={classes['feedback-bg']}>
                 <div className={classes['text-container']}>
                     <h1>
@@ -58,7 +70,7 @@ const Feedback = () => {
 
                 </div>
             </div>
-            <div className={classes['form-bg']} ref={feedbackForm}>
+            <div className={classes['form-bg']} ref={form}>
                 <div className={classes['feedback-form-container']}>
                     <div className={classes['text-container']}>
                         <h1>
@@ -72,7 +84,7 @@ const Feedback = () => {
                 </div>
             </div>
         </main>
-        <Footer />
+        <Footer ref={footer}/>
     </>
     )
 };
