@@ -47,6 +47,8 @@ nav {
 
     & .logo {
         width: 150px;
+        height: 150px;
+        text-align: center;
 
         @media (max-width: 1024px) {
             order: -1;

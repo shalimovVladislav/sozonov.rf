@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import classes from './Navbar.module.scss';
-import Logo from '@/assets/logo.svg';
+import logo from '@/assets/logo.png';
 
 const darkBgPagesPaths = ['/home', '/feedback'];
 
@@ -30,8 +30,6 @@ const Navbar = () => {
 
   const handleClickOnContactsBtn = () => {
     navigate('.#footer', { relative: "path" });
-    // const footer = document.getElementById('footer');
-    // footer.scrollIntoView({ behavior: 'smooth' })
   };
 
   return (
@@ -40,7 +38,7 @@ const Navbar = () => {
       <Link className={`${classes.link} ${isBgDark ? classes.light : classes.dark} ${classes[`display-${displayType}`]}`} to={'/about'}>О нас</Link>
       <Link className={`${classes.link} ${isBgDark ? classes.light : classes.dark} ${classes[`display-${displayType}`]}`} to={'/products'}>Оплатить подписку</Link>
       <button className={classes.logo} onClick={handleClickOnLogoBtn}>
-        <Logo className={`${isBgDark ? classes.light : classes.dark}`} width={142} height={142}></Logo>
+        <img className={classes.logo} src={logo} alt="" />
       </button>
       <Link className={`${classes.link} ${isBgDark ? classes.light : classes.dark} ${classes[`display-${displayType}`]}`} to={'/feedback'}>Отзывы</Link>
       <button className={`${classes.button} ${isBgDark ? classes.light : classes.dark} ${classes[`display-${displayType}`]}`} onClick={handleClickOnHelpBtn} >Помощь</button>
