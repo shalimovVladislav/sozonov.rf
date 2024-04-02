@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import classes from './Home.module.scss';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -8,6 +8,11 @@ import cityImage from '@/assets/homePage_img.png';
 const Home = () => {
     const footer = useRef<HTMLDivElement>();
     const location = useLocation();
+    const navigate = useNavigate();
+
+    const handleClickOnLearnMoreBtn = () => {
+        navigate('/about');
+    };
 
     useEffect(() => {
         if (location.hash === "#footer" && footer.current) {
@@ -23,7 +28,7 @@ const Home = () => {
                     <div className={classes['text-container']}>
                         <h1 className={classes['color-white']}>Созонов.рф</h1>
                         <p className={classes['color-white']}>Программно-аппаратный комплекс мониторинга придомовых не регулируемых парковочных мест.</p>
-                        <button className={classes['color-white']}>Узнать подробнее</button>
+                        <button className={classes['color-white']} onClick={handleClickOnLearnMoreBtn}>Узнать подробнее</button>
                     </div>
                     <div className={classes['img-container']}>
                         <img src={cityImage} alt="city skyscraper" />
