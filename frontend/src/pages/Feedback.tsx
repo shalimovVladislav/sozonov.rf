@@ -27,17 +27,6 @@ const Feedback = () => {
         <>
         <main>
             <Navbar/>
-            <div className={classes['feedback-bg']}>
-                <div className={classes['text-container']}>
-                    <h1>
-                        Открывай возможности вместе с нами
-                    </h1>
-                    <div className={classes.line}></div>
-                    <p>
-                        <b>Созонов.рф</b> это не только приложение, а возможность для каждого пользователя взаимодействовать с передовыми технологиями в сфере транспортной телематики и GPS навигации.
-                    </p>
-                </div>
-            </div>
             <div className={classes['reviews-container']}>
                 <h1>
                     Отзывы наших клиентов

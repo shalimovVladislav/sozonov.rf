@@ -33,7 +33,7 @@ const Products = () => {
                             Diamond
                         </h2>
                         <p>
-                            Коммерческие организации (Застройщики)
+                            Подписка MAXIMUM
                         </p>
                     </div>
                     <div className={classes.product}>
@@ -42,7 +42,7 @@ const Products = () => {
                             Gold
                         </h2>
                         <p>
-                            Частные компании (ИП)
+                            Индивидуальные предприниматели
                         </p>
                     </div>
                     <div className={classes.product}>
@@ -51,7 +51,7 @@ const Products = () => {
                             Silver
                         </h2>
                         <p>
-                            Общественная
+                          Пробная версия
                         </p>
                     </div>
                     <div className={classes.product}>
@@ -60,12 +60,11 @@ const Products = () => {
                             Platinum
                         </h2>
                         <p>
-                            Временная подписка (3 дня)
+                            Коммерческие организации
                         </p>
                     </div>
                 </div>
             </div>
-            <img className={classes['logo-bg']} src={LogoBG} alt="" />
             <Footer ref={footer}/>
         </main>
     );

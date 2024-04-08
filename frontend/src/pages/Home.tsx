@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import classes from './Home.module.scss';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import cityImage from '@/assets/homePage_img.png';
+import cityImage from '@/assets/c38459ae21391acd58d47e165a458b0b.jpg';
 
 const Home = () => {
     const footer = useRef<HTMLDivElement>();
@@ -26,8 +26,10 @@ const Home = () => {
                 <Navbar />
                 <div className={classes['flex-container']}>
                     <div className={classes['text-container']}>
-                        <h1 className={classes['color-white']}>Созонов.рф</h1>
-                        <p className={classes['color-white']}>Программно-аппаратный комплекс мониторинга придомовых не регулируемых парковочных мест.</p>
+                        <h1 className={classes['color-white']}>МСНАБ</h1>
+                        <p className={classes['color-white']}>
+                            Используй момент по максимуму
+                        </p>
                         <button className={classes['color-white']} onClick={handleClickOnLearnMoreBtn}>Узнать подробнее</button>
                     </div>
                     <div className={classes['img-container']}>
@@ -35,11 +37,15 @@ const Home = () => {
                         <div className={classes['offset-border']}></div>
                     </div>
                 </div>
-                <div className={classes['bg-car-parking']}>
+                <div className={classes['bg-trafics-map']}>
                     <div className={classes['flex-container-column']}>
                         <div className={classes['text-container']}>
-                            <h1 className={classes['color-white']}>Цените время</h1>
-                            <p className={classes['color-white']}>Не трать время на поиск парковочного места!  Установи приложение!</p>
+                            <h1 className={classes['color-primal']}>
+                                Мы помогаем работать быстро и эффективно
+                            </h1>
+                            <p className={classes['color-primal']}>
+                                По данным исследования «Повышение производительности при работе с автоматизированными сервисами для снабжения»
+                            </p>
                         </div>
                         <button className={classes['color-white']}>Скачать сейчас</button>
                     </div>
