@@ -27,17 +27,6 @@ const Feedback = () => {
         <>
         <main>
             <Navbar/>
-            <div className={classes['feedback-bg']}>
-                <div className={classes['text-container']}>
-                    <h1>
-                        Открывай возможности вместе с нами
-                    </h1>
-                    <div className={classes.line}></div>
-                    <p>
-                        <b>Созонов.рф</b> это не только приложение, а возможность для каждого пользователя взаимодействовать с передовыми технологиями в сфере транспортной телематики и GPS навигации.
-                    </p>
-                </div>
-            </div>
             <div className={classes['reviews-container']}>
                 <h1>
                     Отзывы наших клиентов
@@ -46,25 +35,27 @@ const Feedback = () => {
                     <div className={classes.review}>
                         <img src={RewiewImg1} alt="Image of the user who left the review" />
                         <p>
-                            Очень простое в использовании приложение, никаких лишних функций, всё легко и понятно.
+                            Высокое качество продукции и надежность в использовании. Рекомендую этого поставщика.
                         </p>
                     </div>
                     <div className={classes.review}>
                         <img src={RewiewImg2} alt="Image of the user who left the review" />
                         <p>
-                            Никогда не думал, что обычное приложение на телефоне настолько сильно облегчит мою жизнь. Спасибо разработчикам.
+                            Оперативная обработка заказа и быстрая доставка, что очень важно для нашей практики.
                         </p>
                     </div>
                     <div className={classes.review}>
                         <img src={RewiewImg3} alt="Image of the user who left the review" />
                         <p>
-                            Очень простое в использовании приложение, никаких лишних функций, всё легко и понятно.
+                            Компетентный и внимательный персонал, готовый оперативно ответить на все вопросы.
                         </p>
                     </div>
                     <div className={classes.review}>
                         <img src={RewiewImg4} alt="Image of the user who left the review" />
                         <p>
-                            Никогда не думала, что обычное приложение на телефоне настолько сильно облегчит мою жизнь. Спасибо разработчикам.
+                        Приемлемые цены на комплекты, что 
+делает их доступными для 
+медучреждений.
                         </p>
                     </div>
 

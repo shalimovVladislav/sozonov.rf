@@ -11,8 +11,10 @@ const Footer = forwardRef((props, ref: ForwardedRef<HTMLDivElement>) => {
         <div className={classes['text-container']}>
           <h1>Наши контакты</h1>
           <div className={classes.bold}>
-            <p>+7 (912) 015-40-24</p>
-            <p>sayleksjam@mail.ru</p>
+            <p>+7 (495) 
+123-45-67
+</p>
+            <p>info@.ru</p>
           </div>
         </div>
         <div className={classes['text-container']}>

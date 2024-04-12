@@ -9,7 +9,7 @@ import AboutPageImg2 from '@/assets/aboutPage_img2.png';
 import AboutPageImg3 from '@/assets/aboutPage_img3.png';
 import AboutPageImg4 from '@/assets/aboutPage_img4.png';
 import CheckIcon from '@/assets/check_icon.png';
-import DescriprionImg from '@/assets/aboutPage_description_img.jpg';
+import DescriprionImg from '@/assets/photo_2023-02-12_21-45-29.jpg';
 
 const About = () => {
     const footer = useRef<HTMLDivElement>();
@@ -23,7 +23,6 @@ const About = () => {
 
     return (
         <main className={classes['bg-color-w']}>
-            <img className={classes['logo-bg-first']} src={LogoBG} alt="" />
             <div className={classes.content}>
                 <Navbar />
                 <div className={classes['flex-container']}>
@@ -41,51 +40,61 @@ const About = () => {
                     <div className={`${classes.advantage} ${classes.left}`}>
                         <img src={CheckIcon} alt="" />
                         <p>
-                            Беспрерывная работа программно-аппаратного комплекса с использованием спутников GPS и ГЛОНАСС.
+                        Магистрали изготовлены из 
+медицинского PVC, 
+обеспечивающего гибкость, 
+прочность и химическую 
+стойкость.
                         </p>
                     </div>
                     <div className={`${classes.advantage} ${classes.right}`}>
                         <img src={CheckIcon} alt="" />
                         <p>
-                            Быстрая идентификация свободного парковочного места, путем отслеживания системами камер, датчиков и спутниковых систем GPS и ГЛОНАСС.
+                        Продуманная конструкция с 
+соединениями и клапанами 
+для быстрого и удобного 
+подключения к 
+оборудованию.
                         </p>
                     </div>
                     <div className={`${classes.advantage} ${classes.left}`}>
                         <img src={CheckIcon} alt="" />
                         <p>
-                            Помощь в выборе оптимального маршрута во избежание аварий и нештатных ситуаций.
+                        Комплекты поставляются в 
+стерильной упаковке, 
+готовые к использованию 
+без дополнительной 
+обработки.
                         </p>
                     </div>
                 </div>
                 <div className={classes.description}>
                     <div className={classes['text-container']}>
-                        <p>
-                            Приложение постоянно обновляет и анализирует полученные данные в режиме online
-                            с помощью камер видеонаблюдения и навигационных систем, а нейронные сети выдают
-                            Вам в приложении необходимую информацию.
-                        </p>
-                        <br />
-                        <p>
-                            К примеру:
-                        </p>
-                        <br />
                         <div>
-                            “Помощник парковки”:
+                        Выбор комплектации:
                             <p className={classes['list-item']}>
-                                Находит место по габаритам вашей машины (транспортного средства)
-                            </p>
-                            <p className={classes['list-item']}>
-                                Прогнозирует наличие свободных парковочных мест
+                            Ознакомьтесь с различными вариантами 
+комплектов, подходящих для ваших 
+нужд.
                             </p>
                         </div>
                         <br />
                         <div>
-                            “Постановка маршрута:
+                            Оформление заказа:
                             <p className={classes['list-item']}>
-                                Осуществляет поиск свободного парковочного места и построение оптимального маршрута до него
+                            Свяжитесь с нами через форму на сайте 
+или по телефону, и мы поможем 
+оформить заказ.
                             </p>
+                        </div>
+                        <br />
+                        <div>
+                            Доставка и оплата:
                             <p className={classes['list-item']}>
-                                Помогает найти свободный выезд из двора (комплекса) в час пик (сокращение придомового трафика).
+                            Мы предлагаем различные удобные 
+способы доставки и оплаты для вашего 
+медучреждения.
+
                             </p>
                         </div>
                     </div>
@@ -93,7 +102,6 @@ const About = () => {
                 </div>
                 <Footer ref={footer}/>
             </div>
-            <img className={classes['logo-bg-second']} src={LogoBG} alt="" />
         </main>
     )
 };

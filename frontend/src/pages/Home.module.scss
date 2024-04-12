@@ -80,6 +80,10 @@
         border: 2px solid #fff;
     }
 
+    & img {
+        width: 500px;
+    }
+
     @media (max-width: 1000px) {
         display: none;
     }
@@ -88,7 +92,7 @@
 .bg-car-parking {
     width: 100%;
 
-    background-image: url('../assets/homePage_bg_car_parking.png');
+    background-image: url('../assets/photo_2024-04-12_16-32-53.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-origin: content-box;
@@ -150,5 +154,9 @@
 
     & .color-white {
         color: #fff;
+    }
+
+    & .color-black {
+        color: #000;
     }
 }

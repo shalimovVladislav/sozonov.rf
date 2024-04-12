@@ -65,7 +65,6 @@ const Products = () => {
                     </div>
                 </div>
             </div>
-            <img className={classes['logo-bg']} src={LogoBG} alt="" />
             <Footer ref={footer}/>
         </main>
     );

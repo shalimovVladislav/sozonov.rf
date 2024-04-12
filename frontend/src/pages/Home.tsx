@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import classes from './Home.module.scss';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import cityImage from '@/assets/homePage_img.png';
+import Image from '@/assets/photo_2024-04-12_16-33-36.jpg';
 
 const Home = () => {
     const footer = useRef<HTMLDivElement>();
@@ -26,22 +26,40 @@ const Home = () => {
                 <Navbar />
                 <div className={classes['flex-container']}>
                     <div className={classes['text-container']}>
-                        <h1 className={classes['color-white']}>Созонов.рф</h1>
-                        <p className={classes['color-white']}>Программно-аппаратный комплекс мониторинга придомовых не регулируемых парковочных мест.</p>
-                        <button className={classes['color-white']} onClick={handleClickOnLearnMoreBtn}>Узнать подробнее</button>
+                        <h1 className={classes['color-white']}>
+                            Кровопроводящие магистрали для перитонеального диализа
+                        </h1>
+                        <p className={classes['color-white']}>
+                            Компания предлагает высококачественные комплекты кровопроводящих магистралей. Наша продукция обеспечивает надежную и безопасную процедуру перитонеального диализа для пациентов.
+                        </p>
+                        <button className={classes['color-white']} onClick={handleClickOnLearnMoreBtn}>
+                            Узнать подробнее
+                        </button>
                     </div>
                     <div className={classes['img-container']}>
-                        <img src={cityImage} alt="city skyscraper" />
+                        <img src={Image} alt="city skyscraper" />
                         <div className={classes['offset-border']}></div>
                     </div>
                 </div>
                 <div className={classes['bg-car-parking']}>
                     <div className={classes['flex-container-column']}>
                         <div className={classes['text-container']}>
-                            <h1 className={classes['color-white']}>Цените время</h1>
-                            <p className={classes['color-white']}>Не трать время на поиск парковочного места!  Установи приложение!</p>
+                            <h1 className={classes['color-black']}>
+                                Преимущества нашей продукции
+                            </h1>
+                            <p className={classes['color-black']}>
+                                Качество:
+                                Тщательное соблюдение стандартов производства и строгий контроль качества.
+                            </p>
+                            <p className={classes['color-black']}>
+                                Инновации:
+                                Постоянное совершенствование конструкции и материалов на основе новейших разработок.
+                            </p>
+                            <p className={classes['color-black']}>
+                                Ответственность:
+                                Безопасность пациентов и их здоровье - наш главный приоритет.
+                            </p>
                         </div>
-                        <button className={classes['color-white']}>Скачать сейчас</button>
                     </div>
                 </div>
             </main>
