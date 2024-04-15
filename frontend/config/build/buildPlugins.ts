@@ -14,7 +14,7 @@ export function buildPlugins({ mode, paths, analyzer }: BuildOptions): Configura
     const isProd = mode === 'production';
 
     const plugins: Configuration['plugins'] = [
-        new HtmlWebpackPlugin( { title: 'Созонов.рф', template: paths.html, favicon: path.resolve(paths.public, 'favicon.png'), meta: { viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no' } }),
+        new HtmlWebpackPlugin( { title: 'Тенвин', template: paths.html, favicon: path.resolve(paths.public, 'favicon.png'), meta: { viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no' } }),
         //new DefinePlugin({}),
         //new CopyPlugin({}),
     ];
