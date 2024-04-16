@@ -8,6 +8,9 @@ import ProductGoldIcon from '@/assets/products_icon_gold.png';
 import ProductSilverIcon from '@/assets/products_icon_silver.png';
 import ProductPlatinumIcon from '@/assets/products_icon_platinum.png';
 import LogoBG from '@/assets/logo_bg.png';
+import FirstImg from '@/assets/product_img1.jpg';
+import SecondImg from '@/assets/product_img2.jpg';
+import ThirdImg from '@/assets/product_img3.jpg';
 
 const Products = () => {
     const footer = useRef<HTMLDivElement>();
@@ -23,46 +26,22 @@ const Products = () => {
         <main className={classes['bg-white']}>
             <Navbar />
             <div className={classes.content}>
-                <h1>
-                    Продукты
-                </h1>
-                <div className={classes.products}>
-                    <div className={classes.product}>
-                        <img src={ProductDiamondIcon} alt="Diamond icon" />
-                        <h2>
-                            Diamond
-                        </h2>
-                        <p>
-                            Коммерческие организации (Застройщики)
-                        </p>
-                    </div>
-                    <div className={classes.product}>
-                        <img src={ProductGoldIcon} alt="Gold icon" />
-                        <h2>
-                            Gold
-                        </h2>
-                        <p>
-                            Частные компании (ИП)
-                        </p>
-                    </div>
-                    <div className={classes.product}>
-                        <img src={ProductSilverIcon} alt="Silver icon" />
-                        <h2>
-                            Silver
-                        </h2>
-                        <p>
-                            Общественная
-                        </p>
-                    </div>
-                    <div className={classes.product}>
-                        <img src={ProductPlatinumIcon} alt="Platinum icon" />
-                        <h2>
-                            Platinum
-                        </h2>
-                        <p>
-                            Временная подписка (3 дня)
-                        </p>
-                    </div>
+                <div className={classes['img-container']}>
+                    <img src={FirstImg} alt="First image of product" />
+                    <img src={SecondImg} alt="Second image of product" />
+                    <img src={ThirdImg} alt="Third image of product" />
+                </div>
+                <div className={classes['text-container']}>
+                    <h1>
+                        Насосная штанга
+                    </h1>
+                    <p>
+                        Изобретение относится к нефтепромысловому оборудованию, а именно к конструкции стеклопластиковых насосных штанг. Положительным техническим результатом изобретения является повышенная надежность соединения стержня и металлических головок (ниппелей).
+                    </p>
+                    <br/>
+                    <p>
+                    В концевых частях стержня на его внешней поверхности выполнены спиралевидные канавки и закрытые пазы, равномерно распределенные по диаметру стержня. Металлические головки (ниппели) состоят из цилиндрического основания, хвостовика, лысок, ограничительного буртика и резьбовой части. В корпусе каждой из головок выполнено внутреннее продольное глухое цилиндрическое отверстие, при этом в области цилиндрического основания выполнены внутренние конусы, основанием направленные в сторону резьбовой части, заполненные клеящим составом.
+                    </p>
                 </div>
             </div>
             <Footer ref={footer}/>

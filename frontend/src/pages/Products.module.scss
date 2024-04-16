@@ -4,69 +4,50 @@
 
 .content {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 60px;
+
+    gap: 80px;
+
+    padding: 20px 20px 150px 20px;
+
+    margin-inline: auto;
+
+    max-width: 1200px;
 
 
-    padding: 50px 20px 90px 20px;
-    
-    & h1 {
-        font-weight: 600;
-        font-size: 40px;
-        line-height: 75%;
-        text-transform: uppercase;
-        color: #000;
-
-    }
-
-    & .products {
-
+    & .img-container {
         display: flex;
-        flex-wrap: wrap;
-        gap: 50px;
-        justify-content: center;
-        align-items: start;
+        flex-direction: column;
+        align-items: center;
+        
+        & img {
+            width: 50%;
 
-        max-width: 1200px;
-
-
-        & .product {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 30px;
-
-            width: 350px;
-            height: 250px;
-
-            border: 2px solid rgba($color: #000000, $alpha: 0.3);
-            border-radius: 5%;
-            
-            & img {
-                width: 98px;
-            }
-
-            & h2 {
-                font-weight: 700;
-                font-size: 32px;
-                line-height: 95%;
-                color: #000;
-            }
-
-            & p {
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 190%;
-                text-align: center;
-                color: #000;
-            }
-
-            &:hover {
-                background: rgba($color: #000000, $alpha: 0.3);
+            @media (max-width: 1024px) {
+                width: 100%;
             }
         }
+
+        @media (max-width: 1024px) {
+            order: 1;
+        }
+    }
+
+    & .text-container {
+        flex: 40% 0 0;
+
+        color: #000;
+
+        & h1 {
+            font-size: 55px;
+            font-weight: 400;
+        
+            padding-bottom: 50px;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
     }
 }
 
