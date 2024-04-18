@@ -8,7 +8,7 @@ import AboutPageImg1 from '@/assets/aboutPage_img1.png';
 import AboutPageImg2 from '@/assets/aboutPage_img2.png';
 import AboutPageImg3 from '@/assets/aboutPage_img3.png';
 import AboutPageImg4 from '@/assets/aboutPage_img4.png';
-import CheckIcon from '@/assets/check_icon.png';
+import CheckIcon from '@/assets/free-icon-check-1828640.png';
 import DescriprionImg from '@/assets/photo_2023-02-12_21-45-29.jpg';
 
 const About = () => {
@@ -27,13 +27,9 @@ const About = () => {
                 <Navbar />
                 <div className={classes['flex-container']}>
                     <div className={classes['text-container']}>
-                        <p>Наш комплекс — это новый шаг в будущее.</p>
-                    </div>
-                    <div className={classes['img-container']}>
-                        <img src={AboutPageImg1} alt="" />
-                        <img src={AboutPageImg2} alt="" />
-                        <img src={AboutPageImg3} alt="" />
-                        <img src={AboutPageImg4} alt="" />
+                        <p className={classes['color-black']}>
+                            Наша компания специализируется на производстве и поставке высококачественных комплектов кровопроводящих магистралей для гемодиализа. Мы предлагаем инновационные решения, которые обеспечивают надежную и безопасную процедуру перитонеального диализа для пациентов. Наша продукция отвечает самым высоким стандартам качества и безопасности, что делает нас надежным партнером для медицинских учреждений и специалистов в области гемодиализа. Мы стремимся к постоянному совершенствованию наших изделий, чтобы обеспечить максимальный комфорт и эффективность лечения наших клиентов.
+                        </p>
                     </div>
                 </div>
                 <div className={classes.advantages}>

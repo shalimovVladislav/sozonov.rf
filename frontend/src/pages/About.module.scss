@@ -37,8 +37,9 @@
 
 
     & .text-container {
-        font-weight: 600;
-        font-size: 36px;
+        font-weight: 500;
+        font-size: 30px;
+        text-align: justify;
         color: #000;   
     }
 
@@ -161,4 +162,8 @@
             display: none;
         }
     }
+}
+
+.color-black {
+    color: #000;
 }

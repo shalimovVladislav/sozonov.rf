@@ -1,8 +1,8 @@
 import React, { forwardRef, ForwardedRef } from 'react';
 import classes from './Footer.module.scss';
-import VKIcon from '@/assets/vk_icon.png';
-import TelegramIcon from '@/assets/telegram_icon.png';
-import YoutubeIcon from '@/assets/youtube_icon.png';
+import VKIcon from '@/assets/free-icon-font-vk-6422212.png';
+import TelegramIcon from '@/assets/free-icon-font-telegram-6422206.png';
+import YoutubeIcon from '@/assets/free-icon-font-youtube-6422215.png';
 
 const Footer = forwardRef((props, ref: ForwardedRef<HTMLDivElement>) => {
   return (
