@@ -4,6 +4,7 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 80px;
+    position: relative;
     
 
     margin-inline: auto;
@@ -12,6 +13,7 @@ nav {
     @media (max-width: 1024px) {
         flex-direction: column;
         text-align: center;
+        gap: 50px;
     }
 
     & .link {
@@ -46,8 +48,7 @@ nav {
     }
 
     & .logo {
-        width: 150px;
-        height: 150px;
+        width: 200px;
         text-align: center;
 
         @media (max-width: 1024px) {

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import classes from './Navbar.module.scss';
-import logo from '@/assets/logo.png';
+import LogoImage from '@/assets/left_medium.png';
 
-const darkBgPagesPaths = ['/home', '/feedback'];
+const darkBgPagesPaths = ['/home'];
 
 const Navbar = () => {
   let location = useLocation();
@@ -34,6 +34,7 @@ const Navbar = () => {
 
   return (
     <nav>
+      <img className={classes.logo} src={LogoImage} alt="" />
       <Link className={`${classes.link} ${isBgDark ? classes.light : classes.dark} ${classes[`display-${displayType}`]}`} to={'/home'}>Главная</Link>
       <Link className={`${classes.link} ${isBgDark ? classes.light : classes.dark} ${classes[`display-${displayType}`]}`} to={'/about'}>О нас</Link>
       <Link className={`${classes.link} ${isBgDark ? classes.light : classes.dark} ${classes[`display-${displayType}`]}`} to={'/products'}>Описание продукта</Link>
