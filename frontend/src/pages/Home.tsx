@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate, Link } from 'react-router-dom';
 import classes from './Home.module.scss';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -30,7 +30,15 @@ const Home = () => {
                         <p className={classes['color-white']}>
                             Используй момент по максимуму
                         </p>
-                        <button className={classes['color-white']} onClick={handleClickOnLearnMoreBtn}>Узнать подробнее</button>
+                        <div className={classes['btn-container']}>
+                            <button className={classes['color-white']} onClick={handleClickOnLearnMoreBtn}>Узнать подробнее</button>
+                            <button className={classes['color-white']} >
+                                <Link className={classes['color-white']} to={'https://armdl.ru/module/43'}>Арм-парсер</Link>
+                            </button>
+                            <button className={classes['color-white']} >
+                                <Link className={classes['color-white']} to={'https://armdl.ru/module/47'}>Арм-аналог</Link>
+                            </button>
+                        </div>
                     </div>
                     <div className={classes['img-container']}>
                         <img src={cityImage} alt="city skyscraper" />

@@ -7,7 +7,6 @@ import ProductDiamondIcon from '@/assets/products_icon_diamond.png';
 import ProductGoldIcon from '@/assets/products_icon_gold.png';
 import ProductSilverIcon from '@/assets/products_icon_silver.png';
 import ProductPlatinumIcon from '@/assets/products_icon_platinum.png';
-import LogoBG from '@/assets/logo_bg.png';
 
 const Products = () => {
     const footer = useRef<HTMLDivElement>();

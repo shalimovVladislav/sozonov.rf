@@ -31,27 +31,41 @@
         padding-bottom: 50px;
     }
     
-    & button {
-        width: 255px;
-        height: 50px;
-    
-        border: none;
-    
-        border-radius: 5px;
-    
-        padding: 0;
-        border: none;
+
+    & .btn-container {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+
+        & button {
+            width: 255px;
+            height: 50px;
+
+            text-align: center;
         
-        font-family: inherit;
-        font-size: 16px;
-        font-weight: 600;
+            border: none;
+        
+            border-radius: 5px;
+        
+            padding: 0;
+            border: none;
+            
+            font-family: inherit;
+            font-size: 16px;
+            font-weight: 600;
+        
+            background: rgb(255, 0, 0);
     
-        background: rgb(255, 0, 0);
+            box-shadow: 20px 20px 20px rgb(55, 77, 129);
 
-        box-shadow: 20px 20px 20px rgb(55, 77, 129);
-
-        &:hover {
-            background: rgb(110, 0, 0);
+            a {
+                display: block;
+                margin: auto;
+            }
+    
+            &:hover {
+                background: rgb(110, 0, 0);
+            }
         }
     }
 

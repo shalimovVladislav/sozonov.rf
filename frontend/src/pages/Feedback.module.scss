@@ -1,5 +1,5 @@
 main {
-    background-color: rgb(255, 0, 0);
+    background-color: #f5f5f5;
 }
 
 .feedback-bg {
@@ -19,7 +19,6 @@ main {
     align-items: center;
     gap: 80px;
     
-
     padding: 200px 20px;
 
     & h1 {
@@ -54,7 +53,7 @@ main {
 .reviews-container {
     width: 100%;
 
-    background-color: #f5f5f5;;
+    background-color: #f5f5f5;
     padding-block: 100px;
 
     & h1 {

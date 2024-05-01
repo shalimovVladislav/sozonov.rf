@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import classes from './Navbar.module.scss';
-import logo from '@/assets/logo.png';
+import { useAppSelector, useAppDispatch } from '@/hooks/index';
+import { selectAuthentication, clearAuth } from '@/slices/authenticationReducer'
 
-const darkBgPagesPaths = ['/home', '/feedback'];
+const darkBgPagesPaths = ['/home'];
 
 const Navbar = () => {
   let location = useLocation();
@@ -15,14 +16,8 @@ const Navbar = () => {
   const navigate = useNavigate();
   const [displayType, setDistplayType] = useState('block');
 
-  const handleClickOnLogoBtn = () => {
-    if (displayType == 'none') {
-      setDistplayType('block');
-    }
-    if (displayType == 'block') {
-      setDistplayType('none');
-    }
-  };
+  const isAuth = useAppSelector(selectAuthentication)
+  const dispatch = useAppDispatch();
 
   const handleClickOnHelpBtn = () => {
     navigate('/feedback#form');
@@ -32,19 +27,21 @@ const Navbar = () => {
     navigate('.#footer', { relative: "path" });
   };
 
+  const handleClickOnExitBtn = () => {
+    dispatch(clearAuth());
+  }
+
   return (
     <nav>
       <Link className={`${classes.link} ${isBgDark ? classes.light : classes.dark} ${classes[`display-${displayType}`]}`} to={'/home'}>Главная</Link>
       <Link className={`${classes.link} ${isBgDark ? classes.light : classes.dark} ${classes[`display-${displayType}`]}`} to={'/about'}>О нас</Link>
       <Link className={`${classes.link} ${isBgDark ? classes.light : classes.dark} ${classes[`display-${displayType}`]}`} to={'/products'}>Оплатить подписку</Link>
-      {/* <button className={classes.logo} onClick={handleClickOnLogoBtn}>
-        <img className={classes.logo} src={logo} alt="" />
-      </button> */}
       <Link className={`${classes.link} ${isBgDark ? classes.light : classes.dark} ${classes[`display-${displayType}`]}`} to={'/feedback'}>Отзывы</Link>
       <button className={`${classes.button} ${isBgDark ? classes.light : classes.dark} ${classes[`display-${displayType}`]}`} onClick={handleClickOnHelpBtn} >Помощь</button>
       <button className={`${classes.button} ${isBgDark ? classes.light : classes.dark} ${classes[`display-${displayType}`]}`} onClick={handleClickOnContactsBtn}>
         Контакты
       </button>
+      {isAuth ? <button className={`${classes.button} ${isBgDark ? classes.light : classes.dark} ${classes[`display-${displayType}`]}`} onClick={handleClickOnExitBtn}>Выйти</button> : <Link className={`${classes.link} ${isBgDark ? classes.light : classes.dark} ${classes[`display-${displayType}`]}`} to={'/auth'}>Войти</Link>}
     </nav>
   );
 };
