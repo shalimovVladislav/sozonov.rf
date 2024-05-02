@@ -14,6 +14,7 @@ const Footer = forwardRef((props, ref: ForwardedRef<HTMLDivElement>) => {
             <p>+7 (995) 666-69-69</p>
             <p>msnab@mail.ru</p>
           </div>
+          <p>Поддержка проекта была оказана фондом содействия инновациям в рамках федерального проекта «Платформа университетского технологического предпринимательства»</p>
         </div>
         <div className={classes['text-container']}>
           <h2>Мы в социальных сетях:</h2>

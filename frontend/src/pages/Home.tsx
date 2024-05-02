@@ -3,6 +3,7 @@ import { useLocation, useNavigate, Link } from 'react-router-dom';
 import classes from './Home.module.scss';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import fondLogo from '@/assets/5e356d6acc3937c43a6f01722f09743d.png'
 import cityImage from '@/assets/c38459ae21391acd58d47e165a458b0b.jpg';
 
 const Home = () => {
@@ -25,6 +26,7 @@ const Home = () => {
             <main className={classes['home-bg']}>
                 <Navbar />
                 <div className={classes['flex-container']}>
+                    <img className={classes['fond-logo']} src={fondLogo} alt="Fond logo" />
                     <div className={classes['text-container']}>
                         <h1 className={classes['color-white']}>МСНАБ</h1>
                         <p className={classes['color-white']}>
