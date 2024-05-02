@@ -33,10 +33,10 @@ const Home = () => {
                         <div className={classes['btn-container']}>
                             <button className={classes['color-white']} onClick={handleClickOnLearnMoreBtn}>Узнать подробнее</button>
                             <button className={classes['color-white']} >
-                                <Link className={classes['color-white']} to={'https://armdl.ru/module/43'}>Арм-парсер</Link>
+                                <Link className={classes['color-white']} to={'https://parser.msnab-it.ru/'}>Синтаксический подбор аналога</Link>
                             </button>
                             <button className={classes['color-white']} >
-                                <Link className={classes['color-white']} to={'https://armdl.ru/module/47'}>Арм-аналог</Link>
+                                <Link className={classes['color-white']} to={'https://analog.msnab-it.ru/'}>Параметрический подбор аналога</Link>
                             </button>
                         </div>
                     </div>
