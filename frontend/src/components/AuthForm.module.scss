@@ -1,0 +1,62 @@
+.auth-form {
+    h1 {
+        color: black;    
+    }
+
+    & Form {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    
+        max-width: 1200px;
+
+        margin: auto;
+    
+        padding: 200px 20px 155px 20px;
+    
+        & label{
+            display: none;
+        }
+    
+        & input {
+            padding: 20px 25px;
+
+            min-width: 200px;
+    
+            background: none;
+    
+            border: 1px solid #838383;
+            border-radius: 5px;
+
+            field-sizing: content;
+    
+            font-family: inherit;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 150%;
+            color: #000000;
+        }
+    
+        & button {
+            padding: 20px 25px;
+    
+            border: none;
+            border-radius: 5px;
+    
+            background: #f49150;
+    
+            font-family: inherit;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 150%;
+            color: #fff;
+
+            &:hover {
+                background: #c77641;
+            }
+        }
+    }
+}
