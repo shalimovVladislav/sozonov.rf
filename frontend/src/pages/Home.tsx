@@ -3,7 +3,7 @@ import { useLocation, useNavigate, Link } from 'react-router-dom';
 import classes from './Home.module.scss';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import fondLogo from '@/assets/5e356d6acc3937c43a6f01722f09743d.png'
+import fondLogo from '@/assets/photo_2024-06-26_10-53-01.jpg';
 import cityImage from '@/assets/c38459ae21391acd58d47e165a458b0b.jpg';
 
 const Home = () => {
