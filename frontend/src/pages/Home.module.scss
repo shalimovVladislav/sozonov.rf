@@ -15,16 +15,28 @@
     max-width: 1200px;
 }
 
-.fond-logo {
+.fond-logo-container {
     position: absolute;
-
+    
     top: 70px;
     left: 50px;
-
+    
     width: 200px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    text-align: center;
+
+    color: black;
 
     @media (max-width: 1000px) {
         display: none;
+    }
+
+    .fond-logo {
+        width: 200px;
+        margin-bottom: 5px;
     }
 }
 

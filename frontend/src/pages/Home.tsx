@@ -26,7 +26,12 @@ const Home = () => {
             <main className={classes['home-bg']}>
                 <Navbar />
                 <div className={classes['flex-container']}>
-                    <img className={classes['fond-logo']} src={fondLogo} alt="Fond logo" />
+                    <div className={classes['fond-logo-container']}>
+                        <img className={classes['fond-logo']} src={fondLogo} alt="Fond logo" />
+                        <p className={classes['fond-p']}>
+                            Проект поддержан Фондом содействия инновациям в рамках программы "Студенческий стартап" федерального проекта "Платформа университетского технологического предпринимательства"
+                        </p>
+                    </div>
                     <div className={classes['text-container']}>
                         <h1 className={classes['color-white']}>МСНАБ</h1>
                         <p className={classes['color-white']}>
