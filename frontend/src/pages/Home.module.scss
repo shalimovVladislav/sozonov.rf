@@ -1,5 +1,5 @@
 .home-bg {
-    background: radial-gradient(40% 40% at 20% 20%, rgb(244, 80, 80) 0%, rgb(40,94,104) 100%);
+    background: radial-gradient(50% 50% at 20% 20%, rgb(244, 80, 80) 0%, rgb(55, 77, 129) 100%);
 }
 
 .flex-container {
@@ -18,11 +18,10 @@
 .fond-logo {
     position: absolute;
 
-    top: 800px;
-    left: 0;
+    top: 70px;
+    left: 50px;
 
-    width: 800px;
-    
+    width: 200px;
 
     @media (max-width: 1000px) {
         display: none;
